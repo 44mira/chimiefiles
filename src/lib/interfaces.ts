@@ -22,4 +22,13 @@ export interface ThesisFormData {
 	year: number;
 }
 
+export enum SortOption {
+	YearDesc = 'Year (Newest First)',
+	YearAsc = 'Year (Oldest First)',
+	TitleAsc = 'Title (A-Z)',
+	TitleDesc = 'Title (Z-A)',
+	DatasetAsc = 'Dataset (A-Z)',
+	DatasetDesc = 'Dataset (Z-A)'
+}
+
 export type Algorithm = string;

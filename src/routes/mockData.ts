@@ -29,7 +29,7 @@ export const MOCKDATA = [
 	{
 		id: '3',
 		name: 'Sarah Jenkins',
-		year: 2025,
+		year: 2026,
 		degree: 'BS Information Technology',
 		title: 'Automated Phishing Detection using Natural Language Processing',
 		problem:
