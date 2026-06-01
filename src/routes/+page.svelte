@@ -31,9 +31,9 @@
 		// 1. Process Search and Filters
 		let result = theses.filter((t) => {
 			const matchesSearch =
-				t.year.toString().includes(searchLower) ||
-				t.degree.toLowerCase().includes(searchLower) ||
-				t.algorithm.some((algo) => algo.toLowerCase().includes(searchLower));
+				t.name.toLowerCase().includes(searchLower) ||
+				t.title.toLowerCase().includes(searchLower) ||
+				t.dataset.toLowerCase().includes(searchLower);
 
 			const matchesAlgo =
 				selectedAlgoFilters.length === 0 ||

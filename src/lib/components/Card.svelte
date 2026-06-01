@@ -125,7 +125,7 @@
 		{#if isExpanded}
 			<ChevronUp size={16} /> Show Less
 		{:else}
-			<ChevronDown size={16} /> Read Full Abstract
+			<ChevronDown size={16} /> Details
 		{/if}
 	</button>
 </article>
