@@ -11,6 +11,7 @@
 	let searchTerm = $state<string>('');
 	let selectedAlgoFilters = $state<Algorithm[]>([]);
 	let selectedSortTarget = $state<keyof typeof SortOption>();
+	let isFiltered = $derived(selectedAlgoFilters.length || selectedSortTarget || searchTerm.length);
 	// states ===================================================================
 
 	let algoFilters = $derived.by(() => {
@@ -72,7 +73,10 @@
 	<FilterSelection options={algoFilters} bind:selected={selectedAlgoFilters} />
 	<SortBy bind:value={selectedSortTarget} />
 </div>
-<div class="flex flex-col gap-4 p-10">
+<div class="flex flex-col gap-4 px-10 py-4">
+	<h2 class="{isFiltered ? '' : 'invisible'} text-1xl font-bold">
+		{displayedTheses.length} results found.
+	</h2>
 	{#each displayedTheses as thesis (thesis.id)}
 		<Card {thesis} />
 	{/each}
