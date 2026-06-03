@@ -33,6 +33,7 @@
 			const matchesSearch =
 				t.name.toLowerCase().includes(searchLower) ||
 				t.title.toLowerCase().includes(searchLower) ||
+				t.degree.toLowerCase().includes(searchLower) ||
 				t.dataset.toLowerCase().includes(searchLower);
 
 			const matchesAlgo =

@@ -15,7 +15,7 @@
 	<input
 		type="text"
 		bind:value
-		placeholder="Search by author, title, dataset..."
+		placeholder="Search by author, title, dataset, or degree program..."
 		class="w-full rounded-xl border border-slate-200 bg-white py-2.5 pr-4 pl-11 text-sm text-slate-900 placeholder-slate-400 shadow-sm ring-offset-white transition-all outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
 	/>
 </div>
