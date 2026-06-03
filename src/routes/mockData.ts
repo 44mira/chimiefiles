@@ -40,12 +40,3 @@ export const MOCKDATA = [
 			'The fine-tuned DistilBERT model processed incoming emails at 45 emails/second with a false positive rate of only 0.4%. Overall accuracy reached 99.1%, significantly outperforming traditional Naive Bayes classifiers which struggled with novel, context-heavy phishing attempts.'
 	}
 ];
-
-export const DEGREE_PROGRAMS = [
-	'BS Information Technology',
-	'BS Computer Science',
-	'MS Computer Science',
-	'MS Data Science',
-	'PhD Data Science',
-	'PhD Artificial Intelligence'
-];

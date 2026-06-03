@@ -12,10 +12,10 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="sticky flex bg-green-500 p-5 shadow-xl">
+<div class="sticky flex border-b-2 p-5 shadow-lg">
 	<!-- LOGO -->
 	<div class="flex gap-3">
-		<div class="h-fit w-fit self-center rounded-xl bg-green-700 p-3 shadow-xl">
+		<div class="h-fit w-fit self-center rounded-xl bg-blue-600 p-3 shadow-xl">
 			<FileText class="size-[4em] text-white" />
 		</div>
 		<div class="flex flex-col justify-center gap-2">
@@ -27,6 +27,6 @@
 	</div>
 </div>
 
-<div class="flex flex-col items-center py-5 align-middle">
+<div class="flex flex-col px-3 py-5">
 	{@render children()}
 </div>

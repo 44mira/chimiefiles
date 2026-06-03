@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { type Thesis, SortOption, type Algorithm } from '$lib/interfaces';
-	import { MOCKDATA } from './mockData.ts';
+	import ACTUALDATA from './actualData.ts';
 	import SearchBar from '$lib/components/SearchBar.svelte';
 	import FilterSelection from '$lib/components/FilterSelection.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import SortBy from '$lib/components/SortBy.svelte';
 
 	// states ===================================================================
-	let theses = $state<Thesis[]>(MOCKDATA as Thesis[]);
+	let theses = $state<Thesis[]>(ACTUALDATA as Thesis[]);
 	let searchTerm = $state<string>('');
 	let selectedAlgoFilters = $state<Algorithm[]>([]);
 	let selectedSortTarget = $state<keyof typeof SortOption>();
@@ -71,7 +71,7 @@
 	<FilterSelection options={algoFilters} bind:selected={selectedAlgoFilters} />
 	<SortBy bind:value={selectedSortTarget} />
 </div>
-<div class="flex max-w-10/12 flex-col gap-4 rounded-2xl bg-green-500 p-5 shadow-xl">
+<div class="flex flex-col gap-4 p-10">
 	{#each displayedTheses as thesis (thesis.id)}
 		<Card {thesis} />
 	{/each}

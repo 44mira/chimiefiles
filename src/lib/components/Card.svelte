@@ -68,7 +68,7 @@
 
 		<div class="mb-6 flex flex-wrap gap-3">
 			<div class="flex max-w-full items-start gap-2">
-				<Cpu size={18} class="mt-0.5 flex-shrink-0 text-amber-500" />
+				<Cpu size={18} class="mt-0.5 shrink-0 text-amber-500" />
 				<div>
 					<span class="mb-1 block text-xs font-semibold tracking-wider text-slate-500 uppercase"
 						>Algorithm(s)</span
@@ -88,7 +88,7 @@
 			<div class="mx-2 hidden h-8 w-px bg-slate-200 sm:block"></div>
 
 			<div class="flex max-w-full items-start gap-2">
-				<Database size={18} class="mt-0.5 flex-shrink-0 text-emerald-500" />
+				<Database size={18} class="mt-0.5 shrink-0 text-emerald-500" />
 				<div>
 					<span class="mb-1 block text-xs font-semibold tracking-wider text-slate-500 uppercase"
 						>Dataset</span
@@ -101,7 +101,7 @@
 		<div class="relative">
 			<div class="space-y-5 leading-relaxed text-slate-600 {!isExpanded ? 'line-clamp-3' : ''}">
 				<div>
-					<h4 class="mb-1 text-sm font-bold text-slate-900">Problem Statement</h4>
+					<h4 class="mb-1 text-sm font-bold text-slate-900">Problem Tackled</h4>
 					<p>{thesis.problem}</p>
 				</div>
 				<div>
@@ -112,7 +112,7 @@
 
 			{#if !isExpanded}
 				<div
-					class="pointer-events-none absolute right-0 bottom-0 left-0 h-16 bg-gradient-to-t from-white to-transparent"
+					class="pointer-events-none absolute right-0 bottom-0 left-0 h-16 bg-linear-to-t from-white to-transparent"
 				></div>
 			{/if}
 		</div>

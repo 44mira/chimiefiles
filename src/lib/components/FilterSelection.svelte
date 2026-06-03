@@ -8,7 +8,11 @@
 	}
 
 	// Default 'selected' to an empty array to prevent undefined errors
-	let { options, selected = $bindable([]), placeholder = 'Select options' }: Props = $props();
+	let {
+		options,
+		selected = $bindable([]),
+		placeholder = 'Filter by algorithms...'
+	}: Props = $props();
 
 	let isOpen = $state(false);
 	let dropdownNode = $state<HTMLElement | null>(null);
